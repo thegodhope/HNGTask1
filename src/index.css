@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
+html {
+  overflow-y: scroll;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.profilesection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 10px;
+  margin: 4rem 0 4rem 0;
+}
+
+#profile_img {
+  object-fit: cover;
+  width: 90px;
+  height: 90px;
+  border-radius: 275px;
+}
+
+.linksection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-style: normal; */
+  gap: 18px;
+  padding: 0 7rem 0 7rem;
+}
+
+.atag {
+  display: flex;
+  justify-content: center;
+  background-color: #eaecf0;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.6rem 0 0.6rem 0;
+  margin-bottom: 10px;
+}
+.atag > a {
+  font-weight: 500;
+  color: #101828;
+  text-decoration: none;
+}
+.atag:hover {
+  background-color: #d0d5dd;
+}
+@media only screen and (max-width: 768px) {
+  .linksection {
+    padding: 0 1rem 0 1rem;
+  }
+  .linksection > a {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 0 4rem 0 4rem;
+}
+
+.footersection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ededed;
+  padding: 1.9rem 0 1.9rem 0;
+}
+
+.footertext > p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #667085;
+}
+
+.i4g-image {
+  width: 132.13px;
+  height: 32px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+@media only screen and (max-width: 768px) {
+  .footersection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Footer {
+    padding: 0 2rem 0 2rem;
+  }
 }
