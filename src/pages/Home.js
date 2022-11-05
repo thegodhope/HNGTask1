@@ -7,7 +7,7 @@ import zurisecondlogo from "../images/secondloogo.png";
 import { links } from "../components/data";
 import "../index.css";
 
-export default function () {
+export default function() {
   return (
     <div>
       {/* PROFILE SECTION */}
@@ -23,7 +23,7 @@ export default function () {
         </div>
 
         <div>
-          <h1 id="twitter"> Hope Etim </h1>
+          <h1 id="twitter"> Idorenyin Etim </h1>
         </div>
       </div>
 
@@ -33,12 +33,17 @@ export default function () {
         {links.map((link, index) => {
           return (
             <div key={index} className="atag">
-              <a id={link.id} href={link.link} target={"_blank"}>
+              <a id={link.id} href={link.link} target={""}>
                 {link.name}
               </a>
             </div>
           );
         })}
+        <div className="atag">
+          <a id="contact" href="/Contact">
+            Contact Me
+          </a>
+        </div>
       </div>
 
       {/* SOCIAL MEDIA AND FOOTER */}

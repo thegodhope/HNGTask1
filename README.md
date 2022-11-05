@@ -1,3 +1,3 @@
 # HNG-lintree-task
 
-# https://thegodhope.github.io/HNGTask1/
+# https://hopeslinktree.netlify.app
