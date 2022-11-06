@@ -1,3 +1,3 @@
 # HNG-lintree-task
 
-# https://hopeslinktree.netlify.app
+# https://hopeshngtask.vercel.app/
